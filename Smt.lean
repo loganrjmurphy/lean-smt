@@ -15,5 +15,6 @@ import Smt.Solver
 import Smt.String
 import Smt.Tactic
 import Smt.Term
+import Smt.Smtlib
 
 import Smt.Reconstruction.Certifying

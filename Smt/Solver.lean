@@ -188,6 +188,7 @@ def checkSat : SolverT m Result := do
     | "sat"     => return .sat
     | "unsat"   => return .unsat
     | "unknown" => return .unknown
+    | "timeout" => return .unknown
     | _ => (throw (IO.userError s!"unexpected solver output: {repr out}") : IO _)
   return res
 

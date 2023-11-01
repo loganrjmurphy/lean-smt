@@ -134,8 +134,7 @@ where
   kindToArgs : Kind → Array String
     | .boolector => #["--smt2"]
     | .cvc4      => #["--quiet", "--incremental", "--lang", "smt", "--dag-thresh=0"]
-    | .cvc5      => #["--quiet", "--incremental", "--lang", "smt", "--dag-thresh=0",
-                      "--enum-inst"]
+    | .cvc5      => #["--quiet", "--incremental", "--lang", "smt", "--dag-thresh=0"]
     | .vampire   => #["--input_syntax", "smtlib2", "--output_mode", "smtcomp"]
     | .yices     => #[]
     | .z3        => #["-in", "-smt2"]
